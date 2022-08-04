@@ -1,0 +1,268 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Based on the work of [就小鹿] on the asset https://steamcommunity.com/sharedfiles/filedetails/?id=839120792.\nI have used the above linked wallpaper since I got the computer I am using, and have really loved it. Early on I saw that the lines leave a ghost if the background is completely black, (thankfully there was a grey background option to help). Anyway, I figured I would look thru the code and try to debug it and found this post: \nhttps://stackoverflow.com/questions/41483806/painting-in-canvas-which-fades-with-time-strange-alpha-layering-behaviour\nI have made a fairly temporary fix for this which does limit the fading speed and currently only works on black background.",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"custom_audio_pulse_inverse_color" : 
+			{
+				"index" : 18,
+				"order" : 118,
+				"text" : "Inverse color on pulse",
+				"type" : "bool",
+				"value" : true
+			},
+			"custom_background_image" : 
+			{
+				"condition" : "custom_use_background_image.value == true",
+				"index" : 16,
+				"order" : 116,
+				"text" : "Background Image",
+				"type" : "file"
+			},
+			"custom_color_changing" : 
+			{
+				"condition" : "custom_color_mode.value == 1",
+				"index" : 7,
+				"max" : 400,
+				"min" : 20,
+				"order" : 107,
+				"text" : "Color changing speed %<br/>",
+				"type" : "slider",
+				"value" : 100
+			},
+			"custom_color_fixed" : 
+			{
+				"condition" : "custom_color_mode.value == 2",
+				"index" : 8,
+				"order" : 108,
+				"text" : "Hexagon color<br/>",
+				"type" : "color",
+				"value" : "0.3 0.3 1"
+			},
+			"custom_color_mode" : 
+			{
+				"index" : 6,
+				"options" : 
+				[
+					{
+						"label" : "Circulating",
+						"value" : 1
+					},
+					{
+						"label" : "Fixed",
+						"value" : 2
+					}
+				],
+				"order" : 106,
+				"text" : "Color mode",
+				"type" : "combo",
+				"value" : 1
+			},
+			"custom_decay_factor" : 
+			{
+				"index" : 11,
+				"max" : 200,
+				"min" : 50,
+				"order" : 111,
+				"text" : "Light decay speed %<br/><small>Smaller decay speed means light could last longer.</small>",
+				"type" : "slider",
+				"value" : 100
+			},
+			"custom_fade_rate" : 
+			{
+				"index" : 10,
+				"max" : 200,
+				"min" : 60,
+				"order" : 110,
+				"text" : "Fading rate %<br/><small>Lower fading rate means light leaves longer tails.</small>",
+				"type" : "slider",
+				"value" : 100
+			},
+			"custom_fps_limit" : 
+			{
+				"condition" : "custom_fps_limit_on.value == true",
+				"index" : 22,
+				"max" : 60,
+				"min" : 12,
+				"order" : 122,
+				"text" : "FPS limit",
+				"type" : "slider",
+				"value" : 20
+			},
+			"custom_fps_limit_on" : 
+			{
+				"index" : 21,
+				"order" : 121,
+				"text" : "Impose FPS limit",
+				"type" : "bool",
+				"value" : false
+			},
+			"custom_glowing_factor" : 
+			{
+				"index" : 9,
+				"max" : 500,
+				"min" : 50,
+				"order" : 109,
+				"text" : "Blurring %",
+				"type" : "slider",
+				"value" : 100
+			},
+			"custom_max_lines" : 
+			{
+				"index" : 20,
+				"max" : 800,
+				"min" : 200,
+				"order" : 120,
+				"text" : "Maximum lights<br/><small>Too many lights on stage may affect performance.</small>",
+				"type" : "slider",
+				"value" : 300
+			},
+			"custom_pattern_size" : 
+			{
+				"index" : 5,
+				"max" : 150,
+				"min" : 50,
+				"order" : 105,
+				"text" : "Line or point size %",
+				"type" : "slider",
+				"value" : 100
+			},
+			"custom_scale_factor" : 
+			{
+				"index" : 4,
+				"max" : 140,
+				"min" : 60,
+				"order" : 104,
+				"text" : "Hexagon size %",
+				"type" : "slider",
+				"value" : 100
+			},
+			"custom_spawn_origin" : 
+			{
+				"index" : 1,
+				"options" : 
+				[
+					{
+						"label" : "Cursor",
+						"value" : 1
+					},
+					{
+						"label" : "Middle",
+						"value" : 2
+					},
+					{
+						"label" : "Random",
+						"value" : 3
+					}
+				],
+				"order" : 101,
+				"text" : "Lights spawn position",
+				"type" : "combo",
+				"value" : 3
+			},
+			"custom_speed_factor" : 
+			{
+				"index" : 12,
+				"max" : 150,
+				"min" : 60,
+				"order" : 112,
+				"text" : "Light propagating speed %",
+				"type" : "slider",
+				"value" : 100
+			},
+			"custom_use_background_image" : 
+			{
+				"index" : 14,
+				"order" : 114,
+				"text" : "Use custom background image",
+				"type" : "bool",
+				"value" : false
+			},
+			"custom_use_greyish_bg" : 
+			{
+				"condition" : "custom_use_background_image.value == false",
+				"index" : 15,
+				"order" : 115,
+				"text" : "Greyish background<br/><small>To ease the trailing effect</small>",
+				"type" : "bool",
+				"value" : false
+			},
+			"custom_use_lines" : 
+			{
+				"index" : 2,
+				"order" : 102,
+				"text" : "Use lines instead of dots<br/><small>Would be more CPU consuming, but would look much better on HD screens.</small>",
+				"type" : "bool",
+				"value" : true
+			},
+			"custom_use_sparkles" : 
+			{
+				"index" : 13,
+				"order" : 113,
+				"text" : "Sparkles beside lines",
+				"type" : "bool",
+				"value" : true
+			},
+			"header_audio_response" : 
+			{
+				"index" : 17,
+				"order" : 117,
+				"text" : "<h3>Audio&nbsp;Response&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>",
+				"type" : "bool",
+				"value" : false
+			},
+			"header_miscellaneous" : 
+			{
+				"index" : 0,
+				"order" : 100,
+				"text" : "<h3>Miscellaneous&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>",
+				"type" : "bool",
+				"value" : false
+			},
+			"header_others" : 
+			{
+				"index" : 23,
+				"order" : 123,
+				"text" : "<h3>Others&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>",
+				"type" : "bool",
+				"value" : false
+			},
+			"header_performance" : 
+			{
+				"index" : 19,
+				"order" : 119,
+				"text" : "<h3>Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>",
+				"type" : "bool",
+				"value" : false
+			},
+			"header_visual" : 
+			{
+				"index" : 3,
+				"order" : 103,
+				"text" : "<h3>Visual&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>",
+				"type" : "bool",
+				"value" : false
+			},
+			"schemecolor" : 
+			{
+				"order" : 1001,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"monetization" : false,
+	"preview" : "preview.jpg",
+	"tags" : [ "Abstract" ],
+	"title" : "Hexagon New (Updated)",
+	"type" : "web",
+	"version" : 0,
+	"visibility" : "public",
+	"workshopid" : "839120792",
+	"workshopurl" : "steam://url/CommunityFilePage/839120792"
+}
