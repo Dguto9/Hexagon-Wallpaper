@@ -61,7 +61,7 @@ var custom_mspf_limit = 50;
 var now, then, elapsed;
 
 // Position, size and color
-var global_fade_default = 0.7;
+var global_fade_default = 0.04;
 var global_bg = 0.5 / global_fade_default;
 var scale_factor = (w > 1200 && h > 800) ? Math.sqrt(w / 1200.0 * h / 800.0) : 1.0;
 var hex_side_length = 40 * scale_factor * custom_scale_factor;
@@ -292,7 +292,7 @@ function loop() {
         ctx.globalCompositeOperation = 'source-atop';
         ctx.shadowBlur = 0;
         ctx.globalAlpha = 1;
-        ctx.fillStyle = 'rgba(0, 0, 0, alp)'.replace('alp', (global_fade_default * custom_fade_rate)*(Math.random()*0.2));
+        ctx.fillStyle = 'rgba(0, 0, 0, alp)'.replace('alp', (global_fade_default * custom_fade_rate));
         ctx.fillRect(0, 0, w, h);
     }
 
